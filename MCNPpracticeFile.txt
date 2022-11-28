@@ -1,0 +1,52 @@
+Example input file for NENG685
+c Cell cards
+1 2 -0.18 (-1:-2:-3) 5 imp:n,p=1
+2 0 1 2 3 -4 imp:n,p=1
+3 0 4 imp:n,p=0 $kill cell
+4 3 -18.732 -5 imp:n,p=1
+
+c Surface cards
+1 so 600 $bottom of snowman
+2 s 0 0 850 300 $middle of snowman
+3 s 0 0 1250 150 $top of snowman
+4 rcc 0 0 -700 0 0 2200 900
+5 so 10 $stomach w/Uranium
+
+c Data cards
+mode p n
+TOTNU NO $Prompt fission only
+NONU $No multiplication
+KCODE 1000 1.0 50 250
+nps 1000
+c vol 42 j j j
+m1 1000 2
+     8000 1
+m2 1001 -0.111872
+     1002 -0.000026
+     8016 -0.885692
+     8017 -0.000359
+     $8018 -0.002048
+m3 92234 -0.009670
+     92235 -0.898000
+     92236 -0.003810
+     92238 -0.088520
+c sdef par p erg 10 pos -800 0 0
+c sdef par 2 erg d1 pos -800 0 0
+c si1 H 0.1 0.5 1 10
+c sp1 0 0.3 0.4 0.3
+sdef par 1 erg d1 cell 4
+Sp1 -3 0.988 2.249
+f1:p 4.1
+e1 0 1e-5 0.1 10i 10
+f12:p (1 2 3)
+e12 0 1e-5 0.1 10i 10
+f22:n (1 2 3)
+e22 0 1e-5 0.1 10i 10
+f6:p 1
+e6 0 1e-5 0.1 10i 10
+f16:p 1
+e16 0 1e-5 0.1 10i 10
+Fc4 Fission Rate, Number of Fissions per cm^3
+F4:n 4
+Fm4 -1 3 (-6)
+E4 1e-8 50ilog 20
