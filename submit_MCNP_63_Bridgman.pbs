@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N test
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -l nodes=4:ppn=16
+#PBS -l walltime=10:00:00
+#PBS -r n
+#PBS -V
+#PBS -m ae
+
+#module load /app/afit/module_files/mcnp/6_2_1
+module load /usr/share/modulefiles/openmpi/4.1.2
+
+export OMP_STACKSIZE=256M
+
+cd $PBS_O_WORKDIR
+
+mpiexec -n 4 singularity run /app/afit/singularity_files/mcnp630_cand_bridg.sif mcnp6.mpi ixr i=Final_Project_MCNP.txt o=snuffy1.o tasks 16
+
+date
