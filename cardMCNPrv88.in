@@ -1,4 +1,4 @@
-RV Hostile Environment Exposure
+cRV Hostile Environment Exposure
 c Cell cards
 100 1  -1.74  0 u=1     imp:p=1       $ RV UM
 200 0         0 u=1     imp:p=1       $ void background
@@ -27,6 +27,7 @@ m1 1000 -0.055
      14000 -0.025
      17000 -0.005
      19000 -0.045
-sdef pos 0 0 90 axs 0 0 1 rad=25 par=2 erg=10 vec=0 0 1 dir=-1
+sdef pos 0 0 90 erg=10 par=p
+c sdef pos 0 0 90 axs 0 0 1 rad=25 par=2 erg=10 vec=0 0 1 dir=-1
 si1 0 25
 sp1 -21 1
