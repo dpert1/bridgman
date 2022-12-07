@@ -15,6 +15,6 @@ export OMP_STACKSIZE=256M
 
 cd $PBS_O_WORKDIR
 
-mpiexec -n 4 singularity run /app/afit/singularity_files/mcnp630_cand_bridg.sif mcnp6.mpi ixr i=Final_Project_MCNP.txt o=snuffy1.o tasks 16
+mpiexec -n 4 singularity run /app/afit/singularity_files/mcnp630_cand_bridg.sif mcnp6.mpi ixr i=rv88mcnp.in o=rvdata.o tasks 16
 
 date
