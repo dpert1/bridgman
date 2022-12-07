@@ -7,8 +7,8 @@ c Cell cards
 500 0        -10 fill=1 imp:p=1       $ Fill 10 with UM universe 
 
 c Surface cards
-10 rcc   0 0 -80   0 0 80    28
-20 rcc   0 0 -81   0 0 100   50         
+10 rcc   0 0 -80   0 0 160   28
+20 rcc   0 0 -81   0 0 200   50         
 
 c Data cards
 embed1 meshgeo=abaqus               $ type of UM input file
