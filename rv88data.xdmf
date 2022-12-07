@@ -34,11 +34,6 @@
           rv88data:/unstructured_mesh/part-1_1P1/material/mass_density
         </DataItem>
       </Attribute>
-      <Attribute Center="Cell" Name="edit_16_particle_2_value">
-        <DataItem Format="HDF" NumberType="Float" Dimensions="10917" Precision="8" ItemType="Uniform">
-          rv88data:/unstructured_mesh/part-1_1P1/edit/edit_16_particle_2/value
-        </DataItem>
-      </Attribute>
     </Grid>
       
   </Domain>
