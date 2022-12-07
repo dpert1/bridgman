@@ -27,6 +27,6 @@ m1 1000 -0.055
      14000 -0.025
      17000 -0.005
      19000 -0.045
-sdef pos 0 0 90 axs 0 0 0 ext=0 rad=25 par=2 erg=.1 vec=0 0 -1 dir=1
+sdef pos 0 0 90 axs 0 0 1 ext=0 rad=25 par=2 erg=.1 vec=0 0 -1 dir=1
 si1 0 25
 sp1 -21 1
