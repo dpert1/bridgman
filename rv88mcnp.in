@@ -22,6 +22,6 @@ mode p
 nps 100000
 m1 1000 1
      6000 1
-sdef pos 0 0 90 axs 0 0.1736 0.9848 ext=0 rad=25 par=2 erg=.1 vec=0 0 -1 dir=1
+sdef pos 0 0 90 axs 0 0.1736 0.9848 ext=0 rad=25 par=2 erg=.1 vec=0 0 1 dir=1
 si1 0 25
 sp1 -21 1
