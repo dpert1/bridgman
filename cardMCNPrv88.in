@@ -1,4 +1,4 @@
-cRV Hostile Environment Exposure
+RV Hostile Environment Exposure
 c Cell cards
 100 1  -1.74  0 u=1     imp:p=1       $ RV UM
 200 0         0 u=1     imp:p=1       $ void background
@@ -19,7 +19,7 @@ embed1 meshgeo=abaqus               $ type of UM input file
        matcell=  1 100              $ abaqus material to mcnp cell linking
 embee16:p  embed=1
 mode p
-nps 1000000
+nps 10000000
 m1 1000 -0.055
      6000 -0.43
      8000 -0.285
@@ -27,7 +27,6 @@ m1 1000 -0.055
      14000 -0.025
      17000 -0.005
      19000 -0.045
-c sdef pos 0 0 90 erg=10 par=p
-sdef pos 0 0 90 axs 0 .1736 .9848 rad=d1 par=p erg=10 vec=0 0 -1 dir=1
+sdef pos 0 0 90 axs 0 .1736 .9848 rad=d1 par=p erg=1.27 vec=0 0 -1 dir=1
 si1 0 25
 sp1 -21 1
