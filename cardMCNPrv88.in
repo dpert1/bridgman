@@ -20,13 +20,10 @@ embed1 meshgeo=abaqus               $ type of UM input file
 embee16:p  embed=1                  $ tallies energy deposition in UM
 mode p                              $ photon mode (per problem scope)
 nps 10000000                        $ runs 10M photons
-m1 1000 -0.055                      $ material card for 50/50 ceramic/carbon fiber
-     6000 -0.43
-     8000 -0.285
-     13000 -0.155
-     14000 -0.025
-     17000 -0.005
-     19000 -0.045
+m1 1000 -0.11                      $ material card for 63/37 carbon fiber/epoxy
+     6000 -0.86
+     8000 -0.02
+     17000 -0.01
 c source card for far field approximated disk of mono-directional photons at 20kT yield
 sdef pos 0 0 90 axs 0 .1736 .9848 rad=d1 par=p erg=d2 vec=0 0 -1 dir=1
 si1 0 25
