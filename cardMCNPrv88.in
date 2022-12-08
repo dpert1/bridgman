@@ -28,6 +28,6 @@ m1 1000 -0.055
      17000 -0.005
      19000 -0.045
 c sdef pos 0 0 90 erg=10 par=p
-sdef pos 0 0 90 axs 0 0 1 rad=d1 par=p erg=10 vec=0 0 -1 dir=1
+sdef pos 0 0 90 axs 0 .1736 .9848 rad=d1 par=p erg=10 vec=0 0 -1 dir=1
 si1 0 25
 sp1 -21 1
